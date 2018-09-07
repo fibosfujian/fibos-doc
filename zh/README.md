@@ -10,16 +10,15 @@
 
 ## 本项目地址
 
-* GITHUB仓库: [https://github.com/fibosfujian/fibos-doc](https://github.com/fibosfujian/fibos-doc)
+* Github: [https://github.com/fibosfujian/fibos-doc](https://github.com/fibosfujian/fibos-doc)
 * 在线阅读: [https://fibosfj.gitbook.io/fibos-doc/](https://fibosfj.gitbook.io/fibos-doc/)
 
-## 贡献文档
-
-你可以贡献自己的一份力量来完善这个托管在 GitHub 上的文档。
+## 贡献力量
+本项目的目的在于完善FIBOS开发文档和教程，同时能希望推出多语言版本，从而促进FIBOS社区的成长。无论你有开发还是语言方面的特长，你都可以贡献自己的一份力量来完善这个托管在 GitHub 上的文档。
 
 ## 许可证
 
-该项目采用 **署名-非商业性使用-相同方式共享 4.0 国际许可协议** 进行许。传播此文档时请注意遵循以上许可协议。关于本许可证的更多详情可参考 [http://creativecommons.org/licenses/by-sa/4.0/。](http://creativecommons.org/licenses/by-sa/4.0/。)
+该项目采用 **署名-非商业性使用-相同方式共享 4.0 国际许可协议** 进行许。传播此文档时请注意遵循以上许可协议。关于本许可证的更多详情可参考 [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/)。
 
 ## 发起人
 
