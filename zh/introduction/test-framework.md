@@ -1,5 +1,5 @@
-开始体验 FIBOS 超棒的测试框架
-==========
+# 开始体验 FIBOS 超棒的测试框架
+
 不写自动测试用例的程序员不是一个好的测试工程师。我们鼓励所有的项目在启动最初，就建立完整的自动化测试用例。随着项目的发展，前期的投入会得到数百倍的回报。
 
 阅读完本章你可以学会 FIBOS 的测试用例的编写。
@@ -9,28 +9,34 @@
 系统：macOS
 
 * 本章涉及到文章列表：
-```
-fibos_client/
-├── call.js
-├── deploy.js
-├── hello
-│   ├── hello.abi
-│   └── hello.js
-├── initClient.js
-└── test
+
+  ```text
+  fibos_client/
+  ├── call.js
+  ├── deploy.js
+  ├── hello
+  │   ├── hello.abi
+  │   └── hello.js
+  ├── initClient.js
+  └── test
     ├── case.js
     ├── sample_test.js
     └── test_contract.js
-```
-本章示例代码地址：<https://github.com/FIBOSIO/samples>
+  ```
 
-# 一个简单的测试用例
+  本章示例代码地址：[https://github.com/FIBOSIO/samples](https://github.com/FIBOSIO/samples)
+
+## 一个简单的测试用例
+
 创建测试用例文件夹：
-```
+
+```text
 mkdir test
 cd test
 ```
+
 以下代码保存至工作目录 `sample_test.js`:
+
 ```javascript
 var test = require('test');
 test.setup();
@@ -49,22 +55,30 @@ describe('a sample case', () => {
 
 test.run();
 ```
+
 执行:
-```
+
+```text
 fibos sample_test.js
 ```
+
 输出结果:
-```
+
+```text
     a sample case
     √ check name
 
   √ 1 tests completed (0ms)
 ```
-# 开始编写 FIBOS 业务场景测试用例
+
+## 开始编写 FIBOS 业务场景测试用例
+
 依然，以下代码保证本地的 FIBOS 节点服务正在运行。
 
-## 写一个新建 FIBOS 账户的测试用例
+### 写一个新建 FIBOS 账户的测试用例
+
 以下代码保存至工作目录 case.js:
+
 ```javascript
 var test = require('test');
 test.setup();
@@ -111,8 +125,10 @@ describe('new account FIBOS', () => {
 
 require.main === module && test.run(console.DEBUG);
 ```
+
 输出结果:
-```
+
+```text
  new account FIBOS
     √ new account
     √ get account
@@ -120,10 +136,12 @@ require.main === module && test.run(console.DEBUG);
   √ 2 tests completed (13ms)
 ```
 
-## 写一个合约的测试用例
+### 写一个合约的测试用例
+
 还记得我们之间的那个 JavaScript 合约吗，接下来我们针对 hello 的合约编写测试用例：
 
 以下代码保存至工作目录 `test_contract.js`:
+
 ```javascript
 var test = require('test');
 test.setup();
@@ -168,11 +186,14 @@ describe('contract test', () => {
 
 require.main === module && test.run(console.DEBUG);
 ```
+
 输出结果：
-```
+
+```text
   contract test
     √ get code
     √ setabi (405ms)
 
   √ 2 tests completed (420ms)
 ```
+

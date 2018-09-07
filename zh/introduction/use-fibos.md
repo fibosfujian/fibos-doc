@@ -1,5 +1,4 @@
-使用 fibos.js 与 FIBOS 交互
-==========
+# 使用 fibos.js 与 FIBOS 交互
 
 fibos.js 是一个通用 JavaScript Library，通过简单的编码使它成为一个 FIBOS 的 JavaScript Client，它可以与 FIBOS 以及 EOS 区块链进行交互。
 
@@ -11,7 +10,7 @@ fibos.js 是一个通用 JavaScript Library，通过简单的编码使它成为�
 
 * 本章涉及到文章列表：
 
-```
+```text
 hello_fibos/
 ├── fibos_client
 │   ├── createAccount.js
@@ -22,24 +21,27 @@ hello_fibos/
     └── node.js
 ```
 
-* 本章示例代码地址: <https://github.com/FIBOSIO/samples>
+* 本章示例代码地址: [https://github.com/FIBOSIO/samples](https://github.com/FIBOSIO/samples)
 
-# 安装 fibos.js
-FIBOS 支持包管理方式，你可以通过 `fibos --install fibos.js `进行安装。
+## 安装 fibos.js
+
+FIBOS 支持包管理方式，你可以通过 `fibos --install fibos.js`进行安装。
 
 1. 进入工作目录
-```
-~$ cd fibos_client/
-```
+
+   ```text
+   ~$ cd fibos_client/
+   ```
+
 2. 初始化环境
 
-```
+```text
 fibos_client$ fibos --init
 ```
 
 如果没有特殊要求，一路回车，输出信息:
 
-```
+```text
 Press ^C at any time to quit.
 name: (fibos_client)
 version: (1.0.0)
@@ -61,18 +63,19 @@ About to write to $[f}:
 Is this ok? (yes)
 ```
 
-3. 安装 `fibos.js`
+1. 安装 `fibos.js`
 
-```
+```text
 fibos_client$ fibos --install fibos.js
 ```
 
 如果没有报错说明安装 `fibos.js` 成功，开始编码吧！
 
-# 使用 fibos.js 与 FIBOS 进行交互
+## 使用 fibos.js 与 FIBOS 进行交互
+
 新建路径：
 
-```
+```text
 mkdir hello_fibos/fibos_client/
 mkdir hello_fibos/fibos_client/hello/
 ```
@@ -83,8 +86,9 @@ mkdir hello_fibos/fibos_client/hello/
 
 事不宜迟，马上行动吧。
 
-1. 创建 FIBOS 连接 目前我们已经拥有了自己的 FIBOS 节点，现在我们将连接它，如果还不知道如何搭建自己的 FIBOS 服务，请参阅[搭建一个 FIBOS 开发环境](./development-environment.md)。
-以下代码保存至` initClient.js`
+1. 创建 FIBOS 连接 目前我们已经拥有了自己的 FIBOS 节点，现在我们将连接它，如果还不知道如何搭建自己的 FIBOS 服务，请参阅[搭建一个 FIBOS 开发环境](development-environment.md)。
+
+   以下代码保存至`initClient.js`
 
 ```javascript
 var FIBOS = require("fibos.js");
@@ -104,8 +108,9 @@ function initClient(_keyProvider) {
 module.exports = initClient;
 ```
 
-2. 创建账户
-以下代码保存至 `createAccount.js`
+1. 创建账户
+
+   以下代码保存至 `createAccount.js`
 
 ```javascript
 var FIBOS = require('./initClient.js')
@@ -129,8 +134,9 @@ fibos.newaccountSync({
 
 后续的例子中，我们将使用此账号发布合约和调用合约。所以请保证你成功创建了它。
 
-3. 查询账户信息
-以下代码保存至 `queryAccount.js`
+1. 查询账户信息
+
+   以下代码保存至 `queryAccount.js`
 
 ```javascript
 var FIBOS = require('./initClient.js')
@@ -141,5 +147,7 @@ var user = fibos.getAccountSync("hello");
 console.warn('---- user ----', user);
 ```
 
-# 发布属于自己的 JavaScript 合约
+## 发布属于自己的 JavaScript 合约
+
 这一章，我们与自己的本地节点创建了连接，并且成功创建了自己的账户。接下来让我们试试，在本地节点上创建属于自己的 JavaScript 合约。
+

@@ -1,5 +1,4 @@
-搭建一个 FIBOS 开发环境
-==========
+# 搭建一个 FIBOS 开发环境
 
 阅读完本文你将搭建一个 FIBOS 开发环境，为后续的开发做好准备工作。
 
@@ -11,15 +10,15 @@ FIBOS 支持常用的 UNIX 操作系统，比如 Mac OSX, Linux 和 FreeBSD。
 
 然后我们将带领大家搭建一个简单的本地 FIBOS 节点，保证大家学习的需要。
 
-# 快速安装
+## 快速安装
 
-```
+```text
 快速安装: curl -s https://fibos.io/download/installer.sh |sh
 ```
 
 安装结束后 FIBOS 可执行文件在系统 bin 目录下，使用查看 FIBOS 版本：
 
-```
+```text
 ~$ which fibos
 /usr/local/bin/fibos
 
@@ -29,7 +28,7 @@ v0.27.0-dev
 
 FIBOS 是一个可执行文件，它继承了 FIBJS 的 JavaScript CLI 命令行控制台功能，直接执行 FIBOS 回车，进入命令行交互模式，如:
 
-```
+```text
 ~$ fibos
 Welcome to fibjs 0.26.0-dev.
 Type ".help" for more information.
@@ -64,45 +63,47 @@ hello,FIBOS!
 >
 ```
 
-## FIBOS 常用命令
+### FIBOS 常用命令
+
 1. package.json 配置初始化
 
 效果同 npm init
 
-```
+```text
 fibos --init
 ```
 
- 2. 安装包
+1. 安装包
 
 效果同 `npm install fibos.js`
 
-```
+```text
 fibos --install fibos.js
 ```
 
-# UNIX 操作系统下编译
+## UNIX 操作系统下编译
 
 FIBOS 暂时未开源，待开源后提供编译教程!
 
-# 运行自己的 FIBOS 节点
+## 运行自己的 FIBOS 节点
 
 到目前为止，我们已经拥有一个可执行的 FIBOS，想必你已经想大显身手编写 JavaScript 合约了。别急，接下来，我们将带领大家搭建一个简单的 FIBOS 开发环境。 之后的教程都基于此环境，请认真阅读，且保证在后续的学习中此节点正常运行。
 
 * 本文运行环境：
 
-    系统： macOS
+  系统： macOS
 
 * 本文涉及的文章列表：
-```
-hello_fibos/
-└── start_fibos
+
+  ```text
+  hello_fibos/
+  └── start_fibos
     └── node.js
-```
+  ```
 
-*本章示例代码地址：<https://github.com/FIBOSIO/samples>
+\*本章示例代码地址：[https://github.com/FIBOSIO/samples](https://github.com/FIBOSIO/samples)
 
-## 环境配置脚本
+### 环境配置脚本
 
 ```javascript
 var fibos = require('fibos');
@@ -124,7 +125,7 @@ fibos.start();
 
 以上代码保存至工作目录 `node.js`:
 
-```
+```text
 ~$ cd start_fibos/
 fibos$ vim node.js
 fibos$ ls
@@ -133,13 +134,13 @@ node.js
 
 运行 FIBOS 开发环境:
 
-```
+```text
 fibos node.js
 ```
 
 运行结果日志（节选）:
 
-```
+```text
 fibos$ fibos node.js
 ……
 2018-07-30T03:29:01.004 thread-1   producer_plugin.cpp:1194      produce_block        ] Produced block 00000002e091c956... #2 @ 2018-07-30T03:29:01.000 signed by eosio [trxs: 0, lib: 0, confirmed: 0]
@@ -147,15 +148,15 @@ fibos$ fibos node.js
 
 如果你看到了以上的消息，说明运行成功，`eosio` 已经开始区块生产。
 
-恭喜你已经成功运行一个 FIBOS 节点服务，现在你可以开始进行本地编码测试了，[使用 fibos.js 与 FIBOS 交互](./use-fibos.md)，更多高级用法可以继续查看下面内容!
+恭喜你已经成功运行一个 FIBOS 节点服务，现在你可以开始进行本地编码测试了，[使用 fibos.js 与 FIBOS 交互](use-fibos.md)，更多高级用法可以继续查看下面内容!
 
-## 高级用法
+### 高级用法
+
 FIBOS 中 `load` 方法支持参数传递，下面详细的介绍。
 
 1. 修改 FIBOS 监听端口以及地址
-
-* 开启 HTTP 服务对所有地址的8889端口监听
-* 开启 P2P 服务对所有地址的9877端口监听
+2. 开启 HTTP 服务对所有地址的8889端口监听
+3. 开启 P2P 服务对所有地址的9877端口监听
 
 ```javascript
 fibos.load("http", {
@@ -167,9 +168,9 @@ fibos.load("net", {
 });
 ```
 
-(tips: FIBOS 默认 HTTP 端口8888，P2P 端口监听9876)
+\(tips: FIBOS 默认 HTTP 端口8888，P2P 端口监听9876\)
 
-2. 修改及查看 FIBOS 配置以及数据目录
+1. 修改及查看 FIBOS 配置以及数据目录
 
 ```javascript
 // 查看 FIBOS 配置以及数据目录
@@ -181,7 +182,7 @@ fibos.config_dir = "fibos_config_dir/";
 fibos.data_dir = "fibos_data_dir/";
 ```
 
-3. 设置 FIBOS 服务启动时重置环境数据
+1. 设置 FIBOS 服务启动时重置环境数据
 
 开发过程中如果需要重置环境数据，可以使用下面的配置:
 
@@ -191,5 +192,7 @@ fibos.load("chain", {
 });
 ```
 
-# 使用 fibos.js 与 FIBOS 交互
+## 使用 fibos.js 与 FIBOS 交互
+
 现在你已经有了一个 FIBOS 开发环境，让我们了解一下 fibos.js 这个库，编写一个JavaScript Client，它可以通过 HTTP 协议与 FIBOS 进行交互，让我们开始学习吧!
+
