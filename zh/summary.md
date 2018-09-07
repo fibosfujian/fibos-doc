@@ -19,4 +19,6 @@
 * FIBOS 测试网络
   * [FIBOS TestNet 是什么？](testnet/about.md)
   * [如何加入到 TestNet 网络](testnet/join.md)
+* 深入理解FIBOS
+  * [由浅入深理解 FIBOS 权限系统](advance/fibos.md)
 
