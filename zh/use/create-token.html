@@ -1,0 +1,652 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>如何在 FIBOS 中发行和销毁通证 · FIBOS Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="FIBOS Fujian<fibosfujian@hotmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="create-account.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://fibos.io" target="_blank" class="custom-link">FIBOS</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    基础入门
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basic/about.html">
+            
+                <a href="../basic/about.html">
+            
+                    
+                    FIBOS 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../basic/install.html">
+            
+                <a href="../basic/install.html">
+            
+                    
+                    搭建一个 FIBOS 开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../basic/fibosjs.html">
+            
+                <a href="../basic/fibosjs.html">
+            
+                    
+                    使用 fibos.js 与 FIBOS 交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../basic/deploy-contract.md">
+            
+                <span>
+            
+                    
+                    发布一个简单的 JS 合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../basic/test.html">
+            
+                <a href="../basic/test.html">
+            
+                    
+                    开始体验 FIBOS 超棒的测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    FIBOS 基础操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="mainnet.html">
+            
+                <a href="mainnet.html">
+            
+                    
+                    FIBOS 主网信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="eos2fibos.html">
+            
+                <a href="eos2fibos.html">
+            
+                    
+                    从 EOS 主网跨链转账到 FIBOS 主网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="eos2fo.html">
+            
+                <a href="eos2fo.html">
+            
+                    
+                    在 FIBOS 中 EOS 通证与 FO 通证相互兑换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="fibos2eos.html">
+            
+                <a href="fibos2eos.html">
+            
+                    
+                    从 FIBOS 主网跨链转账到 EOS 主网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="bp-list.html">
+            
+                <a href="bp-list.html">
+            
+                    
+                    FIBOS RPC 以及 P2P 列表(持续更新)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="bp.html">
+            
+                <a href="bp.html">
+            
+                    
+                    在 FIBOS 主网中申请注册 BP 节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="create-account.html">
+            
+                <a href="create-account.html">
+            
+                    
+                    如何帮助别人在 FIBOS 中创建账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.8" data-path="create-token.html">
+            
+                <a href="create-token.html">
+            
+                    
+                    如何在 FIBOS 中发行和销毁通证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    FIBOS 测试网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../testnet/about.html">
+            
+                <a href="../testnet/about.html">
+            
+                    
+                    FIBOS TestNet 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../testnet/join.html">
+            
+                <a href="../testnet/join.html">
+            
+                    
+                    如何加入到 TestNet 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    深入理解FIBOS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../advance/fibos.md">
+            
+                <span>
+            
+                    
+                    由浅入深理解 FIBOS 权限系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    FIBOS 扩展应用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../extension/mongodb-richquery.html">
+            
+                <a href="../extension/mongodb-richquery.html">
+            
+                    
+                    三行代码，让 FIBOS 支持 mongoDB 富查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../extension/basic-api.html">
+            
+                <a href="../extension/basic-api.html">
+            
+                    
+                    FIBOS.js API 基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >如何在 FIBOS 中发行和销毁通证</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5982;&#x4F55;&#x5728;-fibos-&#x4E2D;&#x53D1;&#x884C;&#x548C;&#x9500;&#x6BC1;&#x901A;&#x8BC1;">&#x5982;&#x4F55;&#x5728; FIBOS &#x4E2D;&#x53D1;&#x884C;&#x548C;&#x9500;&#x6BC1;&#x901A;&#x8BC1;</h1>
+<blockquote>
+<p>&#x5B66;&#x4E60;&#x672C;&#x6587;&#x6863;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5BF9; FIBOS &#x548C; fibos.js &#x6709;&#x4E00;&#x5B9A;&#x7684;&#x4E86;&#x89E3;&#x3002;&#x5047;&#x5982;&#x4F60;&#x5BF9; FIBOS &#x548C; fibos.js &#x4E0D;&#x4E86;&#x89E3;&#xFF0C;&#x8BF7;&#x53C2;&#x9605; <a href="../basic/fibosjs.html">&#x4F7F;&#x7528; fibos.js &#x4E0E; FIBOS &#x4EA4;&#x4E92;</a> &#x3002;</p>
+</blockquote>
+<p>&#x76F8;&#x6BD4;&#x4E8E;&#x5728; EOS &#x4E0A;&#x53D1;&#x884C;&#x901A;&#x8BC1;&#x7684;&#x590D;&#x6742;&#x6027;&#x548C;&#x9AD8;&#x6210;&#x672C;&#xFF0C;&#x5728; FIBOS &#x4E0A;&#x53D1;&#x884C;&#x901A;&#x8BC1;&#x53EA;&#x9700;&#x8981;&#x4E24;&#x6B65;:</p>
+<p>1.&#x62E5;&#x6709; FIBOS &#x8D26;&#x53F7;</p>
+<p>2.&#x53D1;&#x884C;&#x901A;&#x8BC1;</p>
+<h2 id="&#x62E5;&#x6709;-fibos-&#x8D26;&#x53F7;">&#x62E5;&#x6709; FIBOS &#x8D26;&#x53F7;</h2>
+<p>&#x7531;&#x4E8E;9.4&#x65E5;&#x4E4B;&#x540E;&#xFF0C;FIBOS &#x5B98;&#x7F51;&#x5173;&#x95ED;&#x4E86;&#x514D;&#x8D39;&#x6CE8;&#x518C; FIBOS &#x7684;&#x901A;&#x9053;&#xFF0C;&#x73B0;&#x5728;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x83B7;&#x5F97; FIBOS &#x8D26;&#x53F7;&#xFF1A;</p>
+<p>1.<a href="http://wallet.fo/" target="_blank">&#x4E0B;&#x8F7D; FO &#x94B1;&#x5305;</a> &#x514D;&#x8D39;&#x6CE8;&#x518C; FIBOS &#x8D26;&#x53F7;</p>
+<p>2.&#x53C2;&#x8003;<a href="createAccountnotfree.md">&#x5982;&#x4F55;&#x5E2E;&#x52A9;&#x522B;&#x4EBA;&#x5728; FIBOS &#x4E2D;&#x521B;&#x5EFA;&#x8D26;&#x53F7;</a> &#x4E00;&#x6587;&#xFF0C;&#x8BA9;&#x5DF2;&#x7ECF;&#x62E5;&#x6709; FIBOS &#x8D26;&#x53F7;&#x7684;&#x670B;&#x53CB;&#x66FF;&#x4F60;&#x6CE8;&#x518C;&#x4E00;&#x4E2A; &#x3002;</p>
+<h2 id="&#x53D1;&#x884C;&#x901A;&#x8BC1;">&#x53D1;&#x884C;&#x901A;&#x8BC1;</h2>
+<p>&#x53D1;&#x884C;&#x901A;&#x8BC1;&#x8C03;&#x7528; token &#x5408;&#x7EA6;&#x4E2D;&#x7684; <code>excreate</code> &#x63A5;&#x53E3;&#xFF0C;&#x65B9;&#x6CD5;&#x548C;&#x53C2;&#x6570;&#x540D;&#x89E3;&#x91CA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">void</span> token::excreate(
+  account_name issuer, <span class="hljs-comment">// &#x901A;&#x8BC1;&#x53D1;&#x884C;&#x8D26;&#x53F7;</span>
+  asset maximum_supply, <span class="hljs-comment">// &#x6700;&#x5927;&#x53EF;&#x53D1;&#x884C;&#x901A;&#x8BC1;&#x6570;&#x91CF;</span>
+  double connector_weight, <span class="hljs-comment">// &#x8FDE;&#x63A5;&#x5668;&#x6743;&#x91CD;</span>
+  asset maximum_exchange, <span class="hljs-comment">// &#x6700;&#x5927;&#x53EF;&#x5151;&#x6362;(&#x6D41;&#x901A;)&#x7684;&#x901A;&#x8BC1;&#x6570;&#x91CF;</span>
+  asset reserve_supply, <span class="hljs-comment">// &#x672A;&#x6D41;&#x901A;&#x901A;&#x8BC1;&#x6570;&#x91CF;</span>
+  asset reserve_connector_balance <span class="hljs-comment">// &#x672A;&#x6D41;&#x901A;&#x901A;&#x8BC1;&#x4FDD;&#x8BC1;&#x91D1;&#x6570;&#x91CF;</span>
+)
+</code></pre>
+<p>&#x5728; FIBOS &#x4E0A;&#x4F60;&#x53EF;&#x4EE5;&#x53D1;&#x884C;&#x4E24;&#x79CD;&#x901A;&#x8BC1;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x4F20;&#x7EDF;&#x901A;&#x8BC1;&#xFF0C;&#x4E00;&#x79CD;&#x667A;&#x80FD;&#x901A;&#x8BC1;&#x3002;&#x4E24;&#x79CD;&#x901A;&#x8BC1;&#x7684;&#x4E0D;&#x540C;&#x70B9;&#x5728;&#x4E8E;&#x667A;&#x80FD;&#x901A;&#x8BC1;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; bancor &#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x5151;&#x6362;&#x3002;&#x5982;&#x679C;&#x8FD8;&#x4E0D;&#x4E86;&#x89E3;&#x4EC0;&#x4E48;&#x662F; bancor &#x534F;&#x8BAE;&#x7684;&#x540C;&#x5B66;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <a href="https://github.com/FIBOSIO/bancor" target="_blank">bancor &#x534F;&#x8BAE;&#x4E2D;&#x6587;&#x767D;&#x76AE;&#x4E66;</a> &#x4E00;&#x6587;&#x3002;</p>
+<h4 id="&#x53D1;&#x884C;&#x666E;&#x901A;&#x901A;&#x8BC1;">&#x53D1;&#x884C;&#x666E;&#x901A;&#x901A;&#x8BC1;</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x521D;&#x59CB;&#x5316; fibos &#x5BA2;&#x6237;&#x7AEF;</span>
+...
+let name = <span class="hljs-string">&quot;fibostest123&quot;</span>;
+<span class="hljs-keyword">let</span> ctx = fibos.contractSync(<span class="hljs-string">&quot;eosio.token&quot;</span>);
+<span class="hljs-keyword">let</span> r = ctx.excreateSync(name, <span class="hljs-string">&quot;100000000000.0000 ABC&quot;</span>,  <span class="hljs-number">0</span>, <span class="hljs-string">&apos;0.0000 ABC&apos;</span>,<span class="hljs-string">&apos;0.0000 ABC&apos;</span>, <span class="hljs-string">&apos;0.0000 FO&apos;</span>, {
+    authorization: name
+});
+<span class="hljs-built_in">console</span>.log(r);
+</code></pre>
+<h5 id="&#x589E;&#x53D1;&#x666E;&#x901A;&#x901A;&#x8BC1;">&#x589E;&#x53D1;&#x666E;&#x901A;&#x901A;&#x8BC1;</h5>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x521D;&#x59CB;&#x5316; fibos &#x5BA2;&#x6237;&#x7AEF;</span>
+...
+let name = <span class="hljs-string">&quot;fibostest123&quot;</span>;
+<span class="hljs-keyword">let</span> ctx = fibos.contractSync(<span class="hljs-string">&quot;eosio.token&quot;</span>);
+<span class="hljs-keyword">let</span> r = ctx.exissueSync(name, <span class="hljs-string">&quot;1000000.0000 ABC&quot;</span>, <span class="hljs-string">&quot;issue to fibostest123&quot;</span>, {
+                authorization: name
+            })
+<span class="hljs-built_in">console</span>.log(r);
+</code></pre>
+<p><strong>Tips</strong> : &#x53EA;&#x6709;&#x666E;&#x901A;&#x901A;&#x8BC1;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x589E;&#x53D1;&#x64CD;&#x4F5C;&#xFF0C;&#x667A;&#x80FD;&#x901A;&#x8BC1;&#x4E0D;&#x652F;&#x6301;&#x589E;&#x53D1;&#xFF01;</p>
+<h4 id="&#x53D1;&#x884C;&#x667A;&#x80FD;&#x901A;&#x8BC1;">&#x53D1;&#x884C;&#x667A;&#x80FD;&#x901A;&#x8BC1;</h4>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x521D;&#x59CB;&#x5316; fibos &#x5BA2;&#x6237;&#x7AEF;</span>
+...
+let name = <span class="hljs-string">&quot;fibostest123&quot;</span>;
+<span class="hljs-keyword">let</span> ctx = fibos.contractSync(<span class="hljs-string">&quot;eosio.token&quot;</span>);
+<span class="hljs-keyword">let</span> r = ctx.excreateSync(name, <span class="hljs-string">&quot;100000000000.0000 AAA&quot;</span>,  <span class="hljs-number">0.15</span>,<span class="hljs-string">&apos;10000000000.0000 AAA&apos;</span>, <span class="hljs-string">&apos;3000000000.0000 AAA&apos;</span>, <span class="hljs-string">&apos;90000.0000 FO&apos;</span>, {
+    authorization: name
+});
+<span class="hljs-built_in">console</span>.log(r);
+</code></pre>
+<p>&#x89C2;&#x5BDF;&#x53D1;&#x884C;&#x4F20;&#x7EDF;&#x901A;&#x8BC1;&#x548C;&#x521B;&#x5EFA;&#x667A;&#x80FD;&#x901A;&#x8BC1;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x96BE;&#x53D1;&#x73B0;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x901A;&#x8BC1;&#x7684;&#x8FDE;&#x63A5;&#x5668;&#x6743;&#x91CD;&#xFF08;CW&#xFF09;&#x503C;&#x4E3A;0&#x65F6;&#xFF0C;&#x5B83;&#x5C31;&#x662F;&#x4F20;&#x7EDF;&#x901A;&#x8BC1;&#x3002;&#x800C;&#x5BF9;&#x4E8E;&#x667A;&#x80FD;&#x901A;&#x8BC1;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x8981;&#x6709;&#x5BF9;&#x5E94;&#x7684; cw&#xFF08;0-1&#x4E4B;&#x95F4;&#xFF09;&#x548C; max_exchange&#x3002;&#x4EE5;&#x53CA;&#x6839;&#x636E; bancor &#x534F;&#x8BAE;&#x8BA1;&#x7B97;&#x51FA; reserve_supply &#x548C; reserve_connector_balance&#x3002;</p>
+<h4 id="fo-&#x901A;&#x8BC1;&#x5151;&#x6362;&#x667A;&#x80FD;&#x901A;&#x8BC1;">FO &#x901A;&#x8BC1;&#x5151;&#x6362;&#x667A;&#x80FD;&#x901A;&#x8BC1;</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x521D;&#x59CB;&#x5316; fibos &#x5BA2;&#x6237;&#x7AEF;</span>
+...
+let ctx = fibos.contractSync(<span class="hljs-string">&quot;eosio.token&quot;</span>);
+<span class="hljs-keyword">let</span> name = <span class="hljs-string">&quot;fibostest123&quot;</span>
+<span class="hljs-keyword">let</span> result = ctx.exchangeSync(name, <span class="hljs-string">&quot;1.0000 FO@eosio&quot;</span>, <span class="hljs-string">`0.0000 AAA@fibostest123`</span>, <span class="hljs-string">&quot;exchange FO to AAA&quot;</span>, {
+    authorization: name
+});
+<span class="hljs-built_in">console</span>.log(result);
+</code></pre>
+<h5 id="&#x67E5;&#x8BE2;&#x5151;&#x6362;&#x7684;&#x667A;&#x80FD;&#x901A;&#x8BC1;">&#x67E5;&#x8BE2;&#x5151;&#x6362;&#x7684;&#x667A;&#x80FD;&#x901A;&#x8BC1;</h5>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> rs = fibos.getTableRowsSync(<span class="hljs-literal">true</span>, <span class="hljs-string">&quot;eosio.token&quot;</span>, <span class="hljs-string">&quot;fibostest123&quot;</span>, <span class="hljs-string">&quot;accounts&quot;</span>);
+<span class="hljs-built_in">console</span>.log(rs);
+</code></pre>
+<h4 id="&#x8F6C;&#x8D26;">&#x8F6C;&#x8D26;</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x521D;&#x59CB;&#x5316; fibos &#x5BA2;&#x6237;&#x7AEF;</span>
+...
+let ctx = fibos.contractSync(<span class="hljs-string">&quot;eosio.token&quot;</span>);
+<span class="hljs-keyword">var</span> r = ctx.extransferSync(<span class="hljs-string">&quot;fibostest123&quot;</span>, <span class="hljs-string">&quot;fibostest321&quot;</span>, <span class="hljs-string">&quot;10.0000 ADC@fibostest123&quot;</span>, <span class="hljs-string">&quot;trasnfer to fibostest321&quot;</span>, {
+            authorization: <span class="hljs-string">&quot;fibostest123&quot;</span>
+        });
+<span class="hljs-built_in">console</span>.log(r);
+</code></pre>
+<p>&#x8F6C;&#x8D26;&#x7684;&#x76EE;&#x6807;&#x8D26;&#x6237;&#x5FC5;&#x987B;&#x8981;&#x5728; FIBOS &#x4E2D;&#x5B58;&#x5728;&#xFF0C;&#x4E14;&#x8F6C;&#x8D26;&#x7684;&#x6700;&#x5927;&#x6570;&#x91CF;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;&#x4F60;&#x7684;&#x4F59;&#x989D;&#xFF0C;&#x7CBE;&#x5EA6;&#x4E5F;&#x8981;&#x4E0E;&#x8F6C;&#x8D26;&#x7684; Token &#x7CBE;&#x5EA6;&#x4E00;&#x81F4;&#x3002;</p>
+<h3 id="&#x9500;&#x6BC1;&#x901A;&#x8BC1;">&#x9500;&#x6BC1;&#x901A;&#x8BC1;</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x521D;&#x59CB;&#x5316; fibos &#x5BA2;&#x6237;&#x7AEF;</span>
+...
+let ctx = fibos.contractSync(<span class="hljs-string">&quot;eosio.token&quot;</span>);
+<span class="hljs-keyword">let</span> r = ctx.exdestroySync(<span class="hljs-string">`0.0000 AAA@fibostest123`</span>, {authorization: <span class="hljs-string">&quot;fibostest123&quot;</span>});
+</code></pre>
+<p>&#x5F53;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x8BE5;&#x901A;&#x8BC1;&#x65F6;&#xFF0C;&#x8C03;&#x7528; <code>exdestroySync</code> &#x65B9;&#x6CD5;&#x6765;&#x9500;&#x6BC1;&#x901A;&#x8BC1;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x9500;&#x6BC1;&#x901A;&#x8BC1;&#x9700;&#x8981;<strong>&#x6D41;&#x901A;&#x91CF;&#x4E3A;0</strong>&#x7684;&#x65F6;&#x5019;&#x624D;&#x53EF;&#x4EE5;&#x9500;&#x6BC1;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x901A;&#x8BC1;&#x53D1;&#x884C;&#x65B9;&#x9700;&#x8981;&#x6536;&#x56DE;&#x5E02;&#x573A;&#x4E0A;&#x6240;&#x6709;&#x6D41;&#x901A;&#x7684;&#x901A;&#x8BC1;&#x540E;&#x624D;&#x80FD;&#x9500;&#x6BC1;&#x901A;&#x8BC1;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="create-account.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 如何帮助别人在 FIBOS 中创建账号">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"如何在 FIBOS 中发行和销毁通证","level":"1.3.8","depth":2,"next":{"title":"FIBOS 测试网络","level":"1.4","depth":1,"ref":"","articles":[{"title":"FIBOS TestNet 是什么？","level":"1.4.1","depth":2,"path":"testnet/about.md","ref":"testnet/about.md","articles":[]},{"title":"如何加入到 TestNet 网络","level":"1.4.2","depth":2,"path":"testnet/join.md","ref":"testnet/join.md","articles":[]}]},"previous":{"title":"如何帮助别人在 FIBOS 中创建账号","level":"1.3.7","depth":2,"path":"use/create-account.md","ref":"use/create-account.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"FIBOS Fujian<fibosfujian@hotmail.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"FIBOS Document","language":"zh","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"FIBOS":"https://fibos.io"}},"gitbook":"*","description":"This is a document for fibos","extension":null},"file":{"path":"use/create-token.md","mtime":"2018-09-07T02:45:54.716Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-07T04:04:12.980Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

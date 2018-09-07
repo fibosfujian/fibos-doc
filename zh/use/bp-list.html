@@ -1,0 +1,644 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>FIBOS RPC 以及 P2P 列表(持续更新) · FIBOS Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="FIBOS Fujian<fibosfujian@hotmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bp.html" />
+    
+    
+    <link rel="prev" href="fibos2eos.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://fibos.io" target="_blank" class="custom-link">FIBOS</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    基础入门
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basic/about.html">
+            
+                <a href="../basic/about.html">
+            
+                    
+                    FIBOS 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../basic/install.html">
+            
+                <a href="../basic/install.html">
+            
+                    
+                    搭建一个 FIBOS 开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../basic/fibosjs.html">
+            
+                <a href="../basic/fibosjs.html">
+            
+                    
+                    使用 fibos.js 与 FIBOS 交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../basic/deploy-contract.md">
+            
+                <span>
+            
+                    
+                    发布一个简单的 JS 合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../basic/test.html">
+            
+                <a href="../basic/test.html">
+            
+                    
+                    开始体验 FIBOS 超棒的测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    FIBOS 基础操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="mainnet.html">
+            
+                <a href="mainnet.html">
+            
+                    
+                    FIBOS 主网信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="eos2fibos.html">
+            
+                <a href="eos2fibos.html">
+            
+                    
+                    从 EOS 主网跨链转账到 FIBOS 主网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="eos2fo.html">
+            
+                <a href="eos2fo.html">
+            
+                    
+                    在 FIBOS 中 EOS 通证与 FO 通证相互兑换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="fibos2eos.html">
+            
+                <a href="fibos2eos.html">
+            
+                    
+                    从 FIBOS 主网跨链转账到 EOS 主网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="bp-list.html">
+            
+                <a href="bp-list.html">
+            
+                    
+                    FIBOS RPC 以及 P2P 列表(持续更新)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="bp.html">
+            
+                <a href="bp.html">
+            
+                    
+                    在 FIBOS 主网中申请注册 BP 节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="create-account.html">
+            
+                <a href="create-account.html">
+            
+                    
+                    如何帮助别人在 FIBOS 中创建账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="create-token.html">
+            
+                <a href="create-token.html">
+            
+                    
+                    如何在 FIBOS 中发行和销毁通证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    FIBOS 测试网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../testnet/about.html">
+            
+                <a href="../testnet/about.html">
+            
+                    
+                    FIBOS TestNet 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../testnet/join.html">
+            
+                <a href="../testnet/join.html">
+            
+                    
+                    如何加入到 TestNet 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    深入理解FIBOS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../advance/fibos.md">
+            
+                <span>
+            
+                    
+                    由浅入深理解 FIBOS 权限系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    FIBOS 扩展应用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../extension/mongodb-richquery.html">
+            
+                <a href="../extension/mongodb-richquery.html">
+            
+                    
+                    三行代码，让 FIBOS 支持 mongoDB 富查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../extension/basic-api.html">
+            
+                <a href="../extension/basic-api.html">
+            
+                    
+                    FIBOS.js API 基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >FIBOS RPC 以及 P2P 列表(持续更新)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="fibos-rpc-&#x4EE5;&#x53CA;-p2p-&#x5217;&#x8868;&#x6301;&#x7EED;&#x66F4;&#x65B0;">FIBOS RPC &#x4EE5;&#x53CA; P2P &#x5217;&#x8868;(&#x6301;&#x7EED;&#x66F4;&#x65B0;)</h2>
+<h2 id="fibos-rpc-&#x5217;&#x8868;">FIBOS RPC &#x5217;&#x8868;</h2>
+<p>FIBOS &#x4E3B;&#x7F51;&#x90E8;&#x5206; RPC &#x5730;&#x5740;&#x5982;&#x4E0B;&#x6240;&#x793A;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x4F4D;&#x7F6E;</th>
+<th>RPC &#x5730;&#x5740;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x65B0;&#x52A0;&#x5761;</td>
+<td><a href="http://se-rpc.fibos.io:8870" target="_blank">http://se-rpc.fibos.io:8870</a></td>
+</tr>
+<tr>
+<td>&#x9996;&#x5C14;</td>
+<td><a href="http://sl-rpc.fibos.io:8870" target="_blank">http://sl-rpc.fibos.io:8870</a></td>
+</tr>
+<tr>
+<td>&#x4E1C;&#x4EAC;</td>
+<td><a href="http://to-rpc.fibos.io:8870" target="_blank">http://to-rpc.fibos.io:8870</a></td>
+</tr>
+<tr>
+<td>&#x52A0;&#x62FF;&#x5927;</td>
+<td><a href="http://ca-rpc.fibos.io:8870" target="_blank">http://ca-rpc.fibos.io:8870</a></td>
+</tr>
+<tr>
+<td>&#x4F26;&#x6566;</td>
+<td><a href="http://ln-rpc.fibos.io:8870" target="_blank">http://ln-rpc.fibos.io:8870</a></td>
+</tr>
+<tr>
+<td>&#x5F17;&#x5409;&#x5C3C;&#x4E9A;</td>
+<td><a href="http://va-rpc.fibos.io:8870" target="_blank">http://va-rpc.fibos.io:8870</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="fibos-p2p-&#x5217;&#x8868;">FIBOS P2P &#x5217;&#x8868;</h2>
+<p>FIBOS &#x4E3B;&#x7F51;&#x90E8;&#x5206; P2P &#x5730;&#x5740;&#x5982;&#x4E0B;&#x6240;&#x793A;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x4F4D;&#x7F6E;</th>
+<th>P2P &#x5730;&#x5740;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x65B0;&#x52A0;&#x5761;</td>
+<td>se-rpc.fibos.io:9870</td>
+</tr>
+<tr>
+<td>&#x9996;&#x5C14;</td>
+<td>sl-rpc.fibos.io:9870</td>
+</tr>
+<tr>
+<td>&#x4E1C;&#x4EAC;</td>
+<td>to-rpc.fibos.io:9870</td>
+</tr>
+<tr>
+<td>&#x52A0;&#x62FF;&#x5927;</td>
+<td>ca-rpc.fibos.io:9870</td>
+</tr>
+<tr>
+<td>&#x4F26;&#x6566;</td>
+<td>ln-rpc.fibos.io:9870</td>
+</tr>
+<tr>
+<td>&#x5F17;&#x5409;&#x5C3C;&#x4E9A;</td>
+<td>va-rpc.fibos.io:9870</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fibos2eos.html" class="navigation navigation-prev " aria-label="Previous page: 从 FIBOS 主网跨链转账到 EOS 主网">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bp.html" class="navigation navigation-next " aria-label="Next page: 在 FIBOS 主网中申请注册 BP 节点">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"FIBOS RPC 以及 P2P 列表(持续更新)","level":"1.3.5","depth":2,"next":{"title":"在 FIBOS 主网中申请注册 BP 节点","level":"1.3.6","depth":2,"path":"use/bp.md","ref":"use/bp.md","articles":[]},"previous":{"title":"从 FIBOS 主网跨链转账到 EOS 主网","level":"1.3.4","depth":2,"path":"use/fibos2eos.md","ref":"use/fibos2eos.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"FIBOS Fujian<fibosfujian@hotmail.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"FIBOS Document","language":"zh","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"FIBOS":"https://fibos.io"}},"gitbook":"*","description":"This is a document for fibos","extension":null},"file":{"path":"use/bp-list.md","mtime":"2018-09-07T02:43:34.628Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-07T04:04:12.980Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
