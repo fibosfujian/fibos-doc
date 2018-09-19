@@ -26,7 +26,7 @@ hello_fibos/
 
 ## 学习准备
 
-本章节的内容基于前面章节知识的铺垫。强烈建议读者学习本章之前阅读[使用 fibos.js 与 FIBOS 交互](use-fibos.md)和[搭建一个 FIBOS 开发环境](development-environment.md)，以免在本章的学习过程中遇到困扰。
+本章节的内容基于前面章节知识的铺垫。强烈建议读者学习本章之前阅读[使用 fibos.js 与 FIBOS 交互](fibosjs.md)和[搭建一个 FIBOS 开发环境](install.md)，以免在本章的学习过程中遇到困扰。
 
 目录文件说明:
 
@@ -48,13 +48,13 @@ hello_fibos/
 
    在下面我们通过 JavaScript 来编写合约的功能，在这个合约调用成功后，将在命令行输出传入参数的名称。
 
-以下代码保存至工作目录 ./hello/hello.js
+以下代码保存至工作目录 `./hello/hello.js`
 
 ```javascript
 exports.hi = user => console.error('in contract:', user);
 ```
 
-1. 合约 abi 文件
+2. 合约 abi 文件
 
    下面定义了一份 abi 文件，对于合约而言，abi 定义了 action 行为和数据储存的的表等基础信息。对于 abi 更详细的解读，我们将在后续的文章中给出。
 
@@ -89,7 +89,7 @@ exports.hi = user => console.error('in contract:', user);
 }
 ```
 
-1. 加载、发布合约脚本文件
+3. 加载、发布合约脚本文件
 
    以下代码保存至工作目录 `deploy.js`
 
@@ -137,13 +137,13 @@ code: {
 }
 ```
 
-1. 调用合约接口脚本文件
+4. 调用合约接口脚本文件
 
    以下代码保存至工作目录 `call.js`:
 
-   \`\`\`javascript
+   ```javascript
 
-   var FIBOS = require\('./initClient.js'\)
+   var FIBOS = require('./initClient.js')
 
    var config = {
 
@@ -155,23 +155,24 @@ code: {
 
    };
 
-// new FIBOS client var fibos = FIBOS\(config\["private-key"\]\);
+// new FIBOS client 
+var fibos = FIBOS(config["private-key"]);
 
-//call abi var ctx = fibos.contractSync\(config\["contractName"\]\); let i = ctx.hiSync\('hello', { authorization: config\["contractName"\] }\);
+//call abi 
+var ctx = fibos.contractSync(config["contractName"]); let i = ctx.hiSync('hello', { authorization: config["contractName"] });
 
-```text
+```
+
 执行脚本:
-```
-
-fibos call.js
 
 ```text
-在 FIBOS 节点服务控制台输出 `trxs:1`，说明调用成功 :
+fibos call.js
 ```
+在 FIBOS 节点服务控制台输出 `trxs:1`，说明调用成功 :
 
+```text
 2018-07-30T14:28:22.005 thread-1 producer\_plugin.cpp:1196 produce\_block \] Produced block 00000e57c573a33b... \#3671 @ 2018-07-30T14:28:22.000 signed by eosio \[trxs: 1, lib: 3670, confirmed: 0\]
-
-\`\`\`
+```
 
 ## 体验 FIBOS 超棒的测试框架
 

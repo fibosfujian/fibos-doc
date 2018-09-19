@@ -1,0 +1,465 @@
+
+<!DOCTYPE HTML>
+<html lang="kr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>장 간단한 JS계약 발포 · FIBOS Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="FIBOS Fujian<fibosfujian@hotmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="test.html" />
+    
+    
+    <link rel="prev" href="fibosjs.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://fibos.io" target="_blank" class="custom-link">FIBOS</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    소개하다
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    기초입문
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    FIBOS는뭘까요？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    FIBOS 개발 환경 창건
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="fibosjs.html">
+            
+                <a href="fibosjs.html">
+            
+                    
+                    fibos.js와 FIBOS 인터랙션 사용
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="deploy-contract.html">
+            
+                <a href="deploy-contract.html">
+            
+                    
+                    장 간단한 JS계약 발포
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="test.html">
+            
+                <a href="test.html">
+            
+                    
+                    FIBOS 좋은 테스트 프레임 체험
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >장 간단한 JS계약 발포</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xAC04;&#xB2E8;&#xD55C;-js&#xACC4;&#xC57D;-&#xBC1C;&#xD3EC;">&#xAC04;&#xB2E8;&#xD55C; JS&#xACC4;&#xC57D; &#xBC1C;&#xD3EC;</h1>
+<p>&#xC55E;&#xC7A5;&#xC5D0;&#xC11C; &#xC6B0;&#xB9AC;&#xB294; &#xC790;&#xAE30;&#xC758; FIBOS &#xC131;&#xACF5;&#xD558;&#xAC8C; &#xC5F0;&#xACB0;&#xD588;&#xC744; &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; &#xAC04;&#xB2E8;&#xD55C; &#xC870;&#xC791;&#xB3C4; &#xD588;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBCF8;&#xC7A5;&#xC5D0;&#xC11C; &#xC6B0;&#xB9AC;&#xB294; &#xC5EC;&#xB7EC;&#xBD84;&#xB4E4;&#xACFC; &#xAC19;&#xC774; &#xAC04;&#xB2E8;&#xD55C;JavaScript &#xACC4;&#xC57D;&#xC744; &#xBC1C;&#xD3EC;&#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC5EC;&#xB7EC;&#xBD84;&#xB4E4;&#xC774; &#xACC4;&#xC57D; &#xBC1C;&#xD3EC;&#xD558;&#xB294; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xBE60;&#xB974;&#xAC8C; &#xC775;&#xC219;&#xD558;&#xACE0; &#xB85C;&#xCEEC; &#xB178;&#xB4DC;&#xC5D0;&#xC11C; &#xC790;&#xAE30;&#xC758; JavaScript &#xACC4;&#xC57D; &#xBC1C;&#xD3EC;&#xD558;&#xB294; &#xB370;&#xC5D0; &#xBAA9;&#xC801;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<ul>
+<li>&#xBCF8;&#xBB38; &#xC6B4;&#xD589; &#xD658;&#xACBD;&#xFF1A;</li>
+</ul>
+<p>&#xC624;&#xD37C;&#xB808;&#xC774;&#xD305; &#xC2DC;&#xC2A4;&#xD15C;&#xFF1A;macOS</p>
+<ul>
+<li>&#xBCF8;&#xC7A5; &#xAD00;&#xB828;&#xB418;&#xB294; &#xBB38;&#xC7A5; &#xBAA9;&#xB85D;&#xFF1A;<pre><code class="lang-javascript">hello_fibos/
+&#x251C;&#x2500;&#x2500; fibos_client
+&#x2502;   &#x251C;&#x2500;&#x2500; call.js
+&#x2502;   &#x251C;&#x2500;&#x2500; initClient.js
+&#x2502;   &#x251C;&#x2500;&#x2500; deploy.js
+&#x2502;   &#x251C;&#x2500;&#x2500; hello
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; hello.abi
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; hello.js
+&#x2502;   &#x2514;&#x2500;&#x2500; package.json
+&#x2514;&#x2500;&#x2500; start_fibos
+  &#x2514;&#x2500;&#x2500; node.js
+</code></pre>
+</li>
+</ul>
+<p>&#xBCF8;&#xC7A5; &#xBC94;&#xB840; &#xCF54;&#xB4DC; &#xC8FC;&#xC18C;&#xFF1A;<a href="https://github.com/FIBOSIO/samples" target="_blank">https://github.com/FIBOSIO/samples</a></p>
+<h2 id="&#xD559;&#xC2B5;&#xC900;&#xBE44;">&#xD559;&#xC2B5;&#xC900;&#xBE44;</h2>
+<p>&#xBCF8; &#xC7A5;&#xC808;&#xC758; &#xB0B4;&#xC6A9;&#xC740; &#xC55E; &#xC7A5;&#xC808;&#xC758; &#xC9C0;&#xC2DD;&#xC5D0; &#xAE30;&#xCD08;&#xD569;&#xB2C8;&#xB2E4;. &#xBCF8;&#xC7A5;&#xC744; &#xACF5;&#xBD80;&#xD558;&#xB294; &#xACFC;&#xC815;&#xC911; &#xC5B4;&#xB824;&#xC6C0;&#xC744; &#xACAA;&#xC9C0; &#xC54A;&#xB3C4;&#xB85D; &#xD559;&#xC2B5;&#xC790;&#xAC00; &#xBCF8;&#xC7A5;&#xC744; &#xACF5;&#xBD80;&#xD558;&#xAE30; &#xC804;&#xC5D0; <a href="fibosjs.html">fibos.js&#xC640; FIBOS &#xC778;&#xD130;&#xB799;&#xC158; &#xC0AC;&#xC6A9;</a> &#xBC0F; <a href="install.html">FIBOS &#xAC1C;&#xBC1C; &#xD658;&#xACBD; &#xCC3D;&#xAC74;</a> &#xC77D;&#xB2E4;&#xACE0; &#xAC15;&#xB825;&#xD558;&#xAC8C; &#xAC74;&#xC758;&#xD569;&#xB2C8;&#xB2E4;. </p>
+<p>&#xBAA9;&#xB85D;&#xBB38;&#xC11C; &#xC124;&#xBA85;:</p>
+<pre><code class="lang-text">&#x251C;&#x2500;&#x2500; fibos_client
+&#x2502;   &#x251C;&#x2500;&#x2500; call.js &#x8C03;&#x7528;&#x5408;&#x7EA6;&#x63A5;&#x53E3;&#x811A;&#x672C;&#x6587;&#x4EF6;
+&#x2502;   &#x251C;&#x2500;&#x2500; deploy.js &#x52A0;&#x8F7D;&#x3001;&#x53D1;&#x5E03;&#x5408;&#x7EA6;&#x811A;&#x672C;&#x6587;&#x4EF6;
+&#x2502;   &#x251C;&#x2500;&#x2500; initClient.js FIBOS&#x8FDE;&#x63A5;&#x6587;&#x4EF6;
+&#x2502;   &#x251C;&#x2500;&#x2500; hello
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; hello.abi &#x5408;&#x7EA6;abi&#x6587;&#x4EF6;
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; hello.js &#x5408;&#x7EA6;&#x4EE3;&#x7801;&#x6587;&#x4EF6;
+</code></pre>
+<p>&#xC124;&#xBA85; &#xD544;&#xC694;&#xD574;&#xC57C; &#xD558;&#xB294; &#xAC83;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;. FIBOS &#xC911;&#xC5D0; &#xAC19;&#xC740; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xB3D9;&#xBA85; &#xACC4;&#xC57D; &#xD558;&#xB098;&#xB9CC; &#xBC1C;&#xD3EC; &#xAC00;&#xB2A5;&#xD558;&#xACE0; &#xB0B4;&#xC6A9;&#xC774; &#xB611;&#xAC19;&#xC740; &#xACC4;&#xC57D;(&#xC989; &#xACC4;&#xC57D; &#xCF54;&#xB4DC;hash&#xCE58; &#xAC19;&#xC74C;)&#xC744; &#xB2E4;&#xC2DC; &#xBC1C;&#xD3EC;&#xD558;&#xBA74; &#xBC1C;&#xD3EC; &#xACC4;&#xC57D; &#xC2E4;&#xD328;&#xB418;&#xACE0; &#xACC4;&#xC57D; &#xB0B4;&#xC6A9;&#xC740; &#xB178;&#xB4DC; &#xACC4;&#xC57D; &#xB0B4;&#xC6A9;&#xACFC; &#xB2E4;&#xB974;&#xBA74; &#xACC4;&#xC57D;  &#xAC31;&#xC2E0;&#xB429;&#xB2C8;&#xB2E4;. </p>
+<h2 id="&#xC790;&#xAE30;&#xC758;-js&#xACC4;&#xC57D;-&#xBC1C;&#xD3EC;">&#xC790;&#xAE30;&#xC758; JS&#xACC4;&#xC57D; &#xBC1C;&#xD3EC;</h2>
+<ol>
+<li>hello &#xACC4;&#xC57D; &#xBC88;&#xD638;
+&#xB2E4;&#xC74C;&#xC5D0; &#xC6B0;&#xB9AC;&#xB294; JavaScript&#xB97C; &#xD1B5;&#xD558;&#xC5EC; &#xACC4;&#xC57D;&#xC758; &#xAE30;&#xB2A5;&#xC744; &#xD3B8;&#xC9D1;&#xD569;&#xB2C8;&#xB2E4;. &#xC774; &#xACC4;&#xC57D;&#xC758; &#xC804;&#xC6A9;&#xC774; &#xC131;&#xACF5;&#xB41C; &#xD6C4; &#xBA85;&#xB839; &#xC904;&#xC5D0; &#xC218;&#xC785;&#xD558;&#xB294; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC758; &#xBA85;&#xCE6D;&#xC774; &#xC218;&#xCD9C;&#xB429;&#xB2C8;&#xB2E4;. 
+&#xC774;&#xD558; &#xCF54;&#xB4DC;&#xB294; &#xC791;&#xC5C5; &#xB514;&#xB809;&#xD1A0;&#xB9AC; <code>./hello/hello.js</code>&#xC5D0; &#xBCF4;&#xC874;</li>
+</ol>
+<pre><code class="lang-javascript">exports.hi = user =&gt; <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;in contract:&apos;</span>, user);
+</code></pre>
+<ol>
+<li><p>&#xACC4;&#xC57D; abi &#xBB38;&#xC11C;</p>
+<p>&#xB2E4;&#xC74C;&#xC5D0; abi &#xBB38;&#xC11C; &#xC815;&#xC758;&#xD569;&#xB2C8;&#xB2E4;. &#xACC4;&#xC57D;&#xC5D0;&#xAC8C; abi&#xB294; &#xD589;&#xC704; &#xBC0F; &#xB370;&#xC774;&#xD130; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xD45C; &#xB4F1; &#xAE30;&#xCD08; &#xC815;&#xBCF4;&#xB97C; &#xC815;&#xC758;&#xD569;&#xB2C8;&#xB2E4;. Abi&#xC5D0; &#xB300;&#xD55C; &#xC0C1;&#xC138;&#xD55C; &#xC124;&#xBA85;&#xC740; &#xD6C4;&#xC18D; &#xAE00;&#xC5D0; &#xBCF4;&#xC5EC; &#xC90D;&#xB2C8;&#xB2E4;. 
+&#xC774;&#xD558; &#xCF54;&#xB4DC;&#xB294; &#xC791;&#xC5C5; &#xB514;&#xB809;&#xD1A0;&#xB9AC;<code>./hello/hello.abi</code>&#xC5D0; &#xBCF4;&#xC874;</p>
+</li>
+</ol>
+<pre><code class="lang-javascript">{
+    <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;eosio::abi/1.0&quot;</span>,
+    <span class="hljs-string">&quot;structs&quot;</span>: [{
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;player&quot;</span>,
+        <span class="hljs-string">&quot;base&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;fields&quot;</span>: [{
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;title&quot;</span>,
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        }, {
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;age&quot;</span>,
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;int64&quot;</span>
+        }]
+    }, {
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;hi&quot;</span>,
+        <span class="hljs-string">&quot;base&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;fields&quot;</span>: [{
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;user&quot;</span>,
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;name&quot;</span>
+        }]
+    }],
+    <span class="hljs-string">&quot;actions&quot;</span>: [{
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;hi&quot;</span>,
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;hi&quot;</span>,
+        <span class="hljs-string">&quot;ricardian_contract&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    }]
+}
+</code></pre>
+<ol>
+<li>&#xACC4;&#xC57D; &#xAC01;&#xBCF8; &#xBB38;&#xC11C; &#xB85C;&#xB529;/ &#xBC1C;&#xD3EC;
+&#xC774;&#xD558; &#xCF54;&#xB4DC;&#xB294; &#xC791;&#xC5C5; &#xB514;&#xB809;&#xD1A0;&#xB9AC; <code>deploy.js</code>&#xC5D0; &#xBCF4;&#xC874;
+&#xC6B0;&#xB9AC;&#xB294; &#xC55E; &#xC7A5;&#xC808;&#xC5D0;&#xC11C; &#xCC3D;&#xAC74;&#xD558;&#xB294;hello &#xB77C;&#xB294; &#xACC4;&#xC815;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xC0C1;&#xAE30; &#xACC4;&#xC57D;&#xC744; &#xBC1C;&#xD3EC;&#xD560; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. </li>
+</ol>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> FIBOS = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./initClient.js&apos;</span>)
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;fs&quot;</span>);
+<span class="hljs-keyword">var</span> config = {
+    <span class="hljs-string">&quot;public-key&quot;</span>: <span class="hljs-string">&quot;FO6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV&quot;</span>,
+    <span class="hljs-string">&quot;private-key&quot;</span>: <span class="hljs-string">&quot;5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&quot;</span>,
+    <span class="hljs-string">&quot;contractName&quot;</span>: <span class="hljs-string">&quot;hello&quot;</span>
+};
+
+<span class="hljs-comment">// new FIBOS client</span>
+<span class="hljs-keyword">var</span> fibos = FIBOS(config[<span class="hljs-string">&quot;private-key&quot;</span>]);
+
+<span class="hljs-comment">//setcode</span>
+<span class="hljs-keyword">var</span> js_code = fs.readTextFile(<span class="hljs-string">&quot;./hello/hello.js&quot;</span>);
+fibos.setcodeSync(config[<span class="hljs-string">&quot;contractName&quot;</span>], <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, fibos.compileCode(js_code));
+
+<span class="hljs-comment">//getcode</span>
+<span class="hljs-keyword">var</span> code = fibos.getCodeSync(config[<span class="hljs-string">&quot;contractName&quot;</span>], <span class="hljs-literal">true</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;code:&quot;</span>, code);
+
+<span class="hljs-comment">//setabi</span>
+<span class="hljs-keyword">var</span> abi = <span class="hljs-built_in">JSON</span>.parse(fs.readTextFile(<span class="hljs-string">&quot;./hello/hello.abi&quot;</span>));
+fibos.setabiSync(config[<span class="hljs-string">&quot;contractName&quot;</span>], abi);
+</code></pre>
+<p>&#xC9D1;&#xD589; &#xAC01;&#xBCF8;:</p>
+<pre><code class="lang-text">fibos deploy.js
+</code></pre>
+<p>&#xACB0;&#xACFC; &#xC218;&#xCD9C;(&#xBD80;&#xBD84;):</p>
+<pre><code class="lang-text">code: {
+  &quot;account_name&quot;: &quot;hello&quot;,
+  &quot;code_hash&quot;: &quot;383a12daacaf124eea9afc529822d990853b5b99570401b8394534b746ea3977&quot;,
+  &quot;wast&quot;: &quot;504b03042d00000008002cadfe4c6a9400a2360000003900000008001400696e6465782e6a7301001000000000000000000000000000000000004bad28c82f2a29d6cbc854b055282d4e2d52b0b55348cecf2bcecf49d54b2d2aca2fd250cfcc0389941425269758a9eb8055695a0300504b010200001400000008002cadfe4c6a9400a23600000039000000080000000000000001000000000000000000696e6465782e6a73504b0506000000000100010036000000700000000000&quot;,
+  &quot;wasm&quot;: &quot;&quot;
+}
+</code></pre>
+<ol>
+<li>&#xC804;&#xC6A9; &#xACC4;&#xC57D; &#xC774;&#xC74C;&#xC0C8; &#xAC01;&#xBCF8; &#xBB38;&#xC11C;
+&#xC774;&#xD558; &#xCF54;&#xB4DC;&#xB294; &#xC791;&#xC5C5; &#xB514;&#xB809;&#xD1A0;&#xB9AC; <code>call.js</code> &#xC5D0; &#xBCF4;&#xC874;</li>
+</ol>
+<pre><code class="lang-javascript">
+   <span class="hljs-keyword">var</span> FIBOS = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./initClient.js&apos;</span>)
+
+   <span class="hljs-keyword">var</span> config = {
+
+    <span class="hljs-string">&quot;public-key&quot;</span>: <span class="hljs-string">&quot;FO6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV&quot;</span>,
+
+    <span class="hljs-string">&quot;private-key&quot;</span>: <span class="hljs-string">&quot;5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&quot;</span>,
+
+    <span class="hljs-string">&quot;contractName&quot;</span>: <span class="hljs-string">&quot;hello&quot;</span>
+
+   };
+
+<span class="hljs-comment">// new FIBOS client </span>
+<span class="hljs-keyword">var</span> fibos = FIBOS(config[<span class="hljs-string">&quot;private-key&quot;</span>]);
+
+<span class="hljs-comment">//call abi </span>
+<span class="hljs-keyword">var</span> ctx = fibos.contractSync(config[<span class="hljs-string">&quot;contractName&quot;</span>]); <span class="hljs-keyword">let</span> i = ctx.hiSync(<span class="hljs-string">&apos;hello&apos;</span>, { authorization: config[<span class="hljs-string">&quot;contractName&quot;</span>] });
+</code></pre>
+<p>&#xC9D1;&#xD589; &#xAC01;&#xBCF8; </p>
+<pre><code class="lang-text">fibos call.js
+</code></pre>
+<p>FIBOS &#xB178;&#xB4DC; &#xC11C;&#xBE44;&#xC2A4; &#xCF58;&#xC194;&#xC5D0;&#xC11C; trxs:1 &#xC218;&#xCD9C;&#xB418;&#xBA74; &#xC804;&#xC6A9; &#xC131;&#xACF5; &#xC778;&#xC99D;&#xD569;&#xB2C8;&#xB2E4;. </p>
+<pre><code class="lang-text">2018-07-30T14:28:22.005 thread-1 producer\_plugin.cpp:1196 produce\_block \] Produced block 00000e57c573a33b... \#3671 @ 2018-07-30T14:28:22.000 signed by eosio \[trxs: 1, lib: 3670, confirmed: 0\]
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fibosjs.html" class="navigation navigation-prev " aria-label="Previous page: fibos.js와 FIBOS 인터랙션 사용">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="test.html" class="navigation navigation-next " aria-label="Next page: FIBOS 좋은 테스트 프레임 체험">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"장 간단한 JS계약 발포","level":"1.2.4","depth":2,"next":{"title":"FIBOS 좋은 테스트 프레임 체험","level":"1.2.5","depth":2,"path":"basic/test.md","ref":"basic/test.md","articles":[]},"previous":{"title":"fibos.js와 FIBOS 인터랙션 사용","level":"1.2.3","depth":2,"path":"basic/fibosjs.md","ref":"basic/fibosjs.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"FIBOS Fujian<fibosfujian@hotmail.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"FIBOS Document","language":"kr","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"FIBOS":"https://fibos.io"}},"gitbook":"*","description":"This is a document for fibos","extension":null},"file":{"path":"basic/deploy-contract.md","mtime":"2018-09-19T12:19:36.755Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-19T12:35:24.899Z"},"basePath":"..","book":{"language":"kr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
