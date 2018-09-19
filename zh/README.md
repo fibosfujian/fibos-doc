@@ -11,7 +11,7 @@
 ## 本项目地址
 
 * Github: [https://github.com/fibosfujian/fibos-doc](https://github.com/fibosfujian/fibos-doc)
-* 在线阅读: [https://fibosfj.gitbook.io/fibos-doc/](https://fibosfj.gitbook.io/fibos-doc/)
+* 在线阅读: [https://fibosfujian.github.io/fibos-doc](https://fibosfujian.github.io/fibos-doc/)
 
 ## 贡献力量
 本项目的目的在于完善FIBOS开发文档和教程，同时能希望推出多语言版本，从而促进FIBOS社区的成长。无论你有开发还是语言方面的特长，你都可以贡献自己的一份力量来完善这个托管在 GitHub 上的文档。
