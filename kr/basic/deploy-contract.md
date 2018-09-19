@@ -1,13 +1,12 @@
-# 发布一个简单的 JS 合约
+# 간단한 JS계약 발포
 
-在前面的章节我们成功连接了自己的 FIBOS 的节点，并且进行了一些简单操作。在这一章我们将带领大家发布一个简单的 JavaScript 合约，旨在让大家快速的了解发布合约的流程，并且上手在本地节点发布属于自己的 JavaScript 合约。
+앞장에서 우리는 자기의 FIBOS 성공하게 연결했을 뿐만 아니라 간단한 조작도 했습니다. 본장에서 우리는 여러분들과 같이 간단한JavaScript 계약을 발포하겠습니다. 여러분들이 계약 발포하는 프로세스 빠르게 익숙하고 로컬 노드에서 자기의 JavaScript 계약 발포하는 데에 목적이 있습니다. 
 
-* 本文运行环境：
+* 본문 운행 환경：
 
-系统：macOS
+오퍼레이팅 시스템：macOS
 
-* 本章涉及到文章列表：
-
+* 본장 관련되는 문장 목록：
 ```javascript
 hello_fibos/
 ├── fibos_client
@@ -22,13 +21,13 @@ hello_fibos/
     └── node.js
 ```
 
-本章示例代码地址：[https://github.com/FIBOSIO/samples](https://github.com/FIBOSIO/samples)
+본장 범례 코드 주소：[https://github.com/FIBOSIO/samples](https://github.com/FIBOSIO/samples)
 
-## 学习准备
+## 학습준비
 
-本章节的内容基于前面章节知识的铺垫。强烈建议读者学习本章之前阅读[使用 fibos.js 与 FIBOS 交互](fibosjs.md)和[搭建一个 FIBOS 开发环境](install.md)，以免在本章的学习过程中遇到困扰。
+본 장절의 내용은 앞 장절의 지식에 기초합니다. 본장을 공부하는 과정중 어려움을 겪지 않도록 학습자가 본장을 공부하기 전에 [fibos.js와 FIBOS 인터랙션 사용](fibosjs.md) 및 [FIBOS 개발 환경 창건](install.md) 읽다고 강력하게 건의합니다. 
 
-目录文件说明:
+목록문서 설명:
 
 ```text
 ├── fibos_client
@@ -40,25 +39,22 @@ hello_fibos/
 │   │   └── hello.js 合约代码文件
 ```
 
-需要说明的是，在 FIBOS 中一个用户只能发布一个同名的合约，如果再次发布相同内容的合约（即合约代码hash值相同），发布合约会失败，如果合约内容与节点合约内容不同，则会更新合约。
+설명 필요해야 하는 것은 아래와 같습니다. FIBOS 중에 같은 사용자가 동명 계약 하나만 발포 가능하고 내용이 똑같은 계약(즉 계약 코드hash치 같음)을 다시 발포하면 발포 계약 실패되고 계약 내용은 노드 계약 내용과 다르면 계약  갱신됩니다. 
 
-## 发布自己的 JS 合约
+## 자기의 JS계약 발포
 
-1. hello 合约代码
-
-   在下面我们通过 JavaScript 来编写合约的功能，在这个合约调用成功后，将在命令行输出传入参数的名称。
-
-以下代码保存至工作目录 `./hello/hello.js`
+1. hello 계약 번호
+다음에 우리는 JavaScript를 통하여 계약의 기능을 편집합니다. 이 계약의 전용이 성공된 후 명령 줄에 수입하는 파라미터의 명칭이 수출됩니다. 
+이하 코드는 작업 디렉토리 `./hello/hello.js`에 보존
 
 ```javascript
 exports.hi = user => console.error('in contract:', user);
 ```
 
-2. 合约 abi 文件
+2. 계약 abi 문서
 
-   下面定义了一份 abi 文件，对于合约而言，abi 定义了 action 行为和数据储存的的表等基础信息。对于 abi 更详细的解读，我们将在后续的文章中给出。
-
-以下代码保存至工作目录`./hello/hello.abi`
+ 다음에 abi 문서 정의합니다. 계약에게 abi는 행위 및 데이터 저장하는 표 등 기초 정보를 정의합니다. Abi에 대한 상세한 설명은 후속 글에 보여 줍니다. 
+이하 코드는 작업 디렉토리` ./hello/hello.abi`에 보존
 
 ```javascript
 {
@@ -89,11 +85,9 @@ exports.hi = user => console.error('in contract:', user);
 }
 ```
 
-3. 加载、发布合约脚本文件
-
-   以下代码保存至工作目录 `deploy.js`
-
-我们将使用前面章节创建的 hello 用户来发布一个上述合约。
+3. 계약 각본 문서 로딩/ 발포
+이하 코드는 작업 디렉토리 `deploy.js`에 보존
+우리는 앞 장절에서 창건하는hello 라는 계정을 사용하여 상기 계약을 발포할 것입니다. 
 
 ```javascript
 var FIBOS = require('./initClient.js')
@@ -119,15 +113,13 @@ console.log("code:", code);
 var abi = JSON.parse(fs.readTextFile("./hello/hello.abi"));
 fibos.setabiSync(config["contractName"], abi);
 ```
-
-执行脚本:
+집행 각본:
 
 ```text
 fibos deploy.js
 ```
 
-输出结果\(片段\):
-
+결과 수출\(부분\):
 ```text
 code: {
   "account_name": "hello",
@@ -137,9 +129,9 @@ code: {
 }
 ```
 
-4. 调用合约接口脚本文件
+4. 전용 계약 이음새 각본 문서
+이하 코드는 작업 디렉토리 `call.js` 에 보존
 
-   以下代码保存至工作目录 `call.js`:
 
    ```javascript
 
@@ -162,19 +154,14 @@ var fibos = FIBOS(config["private-key"]);
 var ctx = fibos.contractSync(config["contractName"]); let i = ctx.hiSync('hello', { authorization: config["contractName"] });
 
 ```
-
-执行脚本:
+집행 각본 
 
 ```text
 fibos call.js
 ```
-在 FIBOS 节点服务控制台输出 `trxs:1`，说明调用成功 :
+
+FIBOS 노드 서비스 콘솔에서 trxs:1 수출되면 전용 성공 인증합니다. 
 
 ```text
 2018-07-30T14:28:22.005 thread-1 producer\_plugin.cpp:1196 produce\_block \] Produced block 00000e57c573a33b... \#3671 @ 2018-07-30T14:28:22.000 signed by eosio \[trxs: 1, lib: 3670, confirmed: 0\]
 ```
-
-## 体验 FIBOS 超棒的测试框架
-
-这几章我们学会了如何搭建 FIBOS 的开发环境，也学会了如何使用 fibos.js 与 FIBOS 交互，那么让我们来试试 FIBOS 的测试框架吧!
-

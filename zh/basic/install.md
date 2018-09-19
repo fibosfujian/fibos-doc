@@ -73,7 +73,7 @@ hello,FIBOS!
 fibos --init
 ```
 
-1. 安装包
+2. 安装包
 
 效果同 `npm install fibos.js`
 
@@ -101,7 +101,7 @@ FIBOS 暂时未开源，待开源后提供编译教程!
     └── node.js
   ```
 
-\*本章示例代码地址：[https://github.com/FIBOSIO/samples](https://github.com/FIBOSIO/samples)
+* 本章示例代码地址：[https://github.com/FIBOSIO/samples](https://github.com/FIBOSIO/samples)
 
 ### 环境配置脚本
 
@@ -155,8 +155,8 @@ fibos$ fibos node.js
 FIBOS 中 `load` 方法支持参数传递，下面详细的介绍。
 
 1. 修改 FIBOS 监听端口以及地址
-2. 开启 HTTP 服务对所有地址的8889端口监听
-3. 开启 P2P 服务对所有地址的9877端口监听
+   开启 HTTP 服务对所有地址的8889端口监听
+   开启 P2P 服务对所有地址的9877端口监听
 
 ```javascript
 fibos.load("http", {
@@ -170,7 +170,7 @@ fibos.load("net", {
 
 \(tips: FIBOS 默认 HTTP 端口8888，P2P 端口监听9876\)
 
-1. 修改及查看 FIBOS 配置以及数据目录
+2. 修改及查看 FIBOS 配置以及数据目录
 
 ```javascript
 // 查看 FIBOS 配置以及数据目录
@@ -182,7 +182,7 @@ fibos.config_dir = "fibos_config_dir/";
 fibos.data_dir = "fibos_data_dir/";
 ```
 
-1. 设置 FIBOS 服务启动时重置环境数据
+3. 设置 FIBOS 服务启动时重置环境数据
 
 开发过程中如果需要重置环境数据，可以使用下面的配置:
 

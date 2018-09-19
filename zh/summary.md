@@ -1,6 +1,6 @@
 # 目录
 
-* [介绍](./)
+* [介绍](README.md)
 * 基础入门
   * [FIBOS 是什么？](basic/about.md)
   * [搭建一个 FIBOS 开发环境](basic/install.md)

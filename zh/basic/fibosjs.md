@@ -63,7 +63,7 @@ About to write to $[f}:
 Is this ok? (yes)
 ```
 
-1. 安装 `fibos.js`
+3. 安装 `fibos.js`
 
 ```text
 fibos_client$ fibos --install fibos.js
@@ -134,7 +134,7 @@ fibos.newaccountSync({
 
 后续的例子中，我们将使用此账号发布合约和调用合约。所以请保证你成功创建了它。
 
-1. 查询账户信息
+2. 查询账户信息
 
    以下代码保存至 `queryAccount.js`
 

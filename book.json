@@ -3,7 +3,7 @@
     "description": "This is a document for fibos",
     "extension": null,
     "generator": "site",
-    "isbn": null,
+    "isbn": "",
     "links": {
         "sharing": {
             "all": null,
